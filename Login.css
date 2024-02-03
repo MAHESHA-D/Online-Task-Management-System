@@ -1,0 +1,147 @@
+.login_container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border:0.5px solid gray; */
+    position: fixed;
+    width:45%;
+    left:0%;
+    top:0%;
+    height: 100%;
+    padding-left: 15%;
+}
+#edge_design{
+    position: fixed;
+    width: 348px;
+    height: 240px;
+    top: -23%;
+    left:-15%;
+    transform: rotate(33deg);
+    flex-shrink: 0;
+    border-radius: 348px;
+    background: #0A71FF;
+}
+img{
+    margin-right: 0px;
+    margin-top: -8px;
+    position: fixed;
+    width: 40%;
+    right:0%;
+    height:100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.heading{
+    position: relative;
+    font-size: 20px;
+    padding-top: 5%;
+    color: #000;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.sub_heading{
+    position:relative;
+    font-size: 14px;
+}
+.mail{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#username{
+    position: relative;
+    width: 54%;
+    height: 25px;
+    margin-top: -1%;
+    display: block;
+    outline: none;
+}
+.password{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#password{
+    position: relative;
+    width: 54%;
+    height: 25px;
+    margin-top: -1%;
+    display: block;
+    outline: none;
+}
+#signin_btn{
+    position: relative;
+    display: flex;
+    width: 55%;
+    height: 35px;
+    margin-top: 10%;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #0A71FF;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+#signin_btn:hover{
+    position: relative;
+    display: flex;
+    width: 55%;
+    height: 35px;
+    margin-top: 10%;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #0A71FF;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.95);
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+#signup{
+    position: relative;
+    display: block;
+    margin-top: 3%;
+    height: 35px;
+    width: 55%;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+#signup:hover{
+    position: relative;
+    display: block;
+    margin-top: 3%;
+    height: 35px;
+    width: 55%;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.95);
+    cursor: pointer;
+}
+.divider{
+    position: relative;
+    display: flex;
+    width:55%;
+    color: #616161;
+    font-size: 13px;
+}
+.divider::before, .divider::after {
+    flex: 2;
+    content: '';
+    padding: .1px;
+    background-color:  #6D6D6D;
+    margin: 10px;
+}

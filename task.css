@@ -1,0 +1,19 @@
+#task_design{
+    position: fixed;
+    width: 64px;
+    height: 100%; 
+    margin-left: -9px;
+    margin-top: -11px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #00266E;
+}
+#task_container{
+    position: relative;
+    text-align: center;
+    /* border:1px solid gray; */
+    height: 590px;
+    width: 96.4%;
+    left: 4%;
+    margin-top: -8px;
+}
