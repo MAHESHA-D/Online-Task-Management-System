@@ -1,3 +1,4 @@
+
 async function login() {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
@@ -13,7 +14,7 @@ async function login() {
     })
     .then((response)=>response.json())
     .then((data)=> console.log(data));
-    if(response.status){
+    if(response.status==200){
       window.location.href="task.html";
     }
   } 
