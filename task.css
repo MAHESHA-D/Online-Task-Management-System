@@ -1,19 +1,308 @@
-#task_design{
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#design-top{
     position: fixed;
-    width: 64px;
+    width: 100%;
+    height: 2%; 
+    margin-left: -9px;
+    margin-top: -1px;
+    background:white;
+}
+#design-nav{
+    position: fixed;
+    width: 5%;
     height: 100%; 
     margin-left: -9px;
-    margin-top: -11px;
+    margin-top: -7%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     background: #00266E;
 }
 #task_container{
-    position: relative;
-    text-align: center;
+    position: fixed;
+    /* text-align: center; */
     /* border:1px solid gray; */
-    height: 590px;
-    width: 96.4%;
-    left: 4%;
-    margin-top: -8px;
+    height: 100%;
+    width: 100%;
+    left: 5%;
+    margin-top: -3%;
+    background-color: rgb(207, 202, 202);
+}
+h2{
+    position: fixed;
+    display: inline;
+    margin-left: 2%;
+}
+#input-search{
+    position: fixed;
+    width:15%;
+    display: inline;
+    left:65%;
+    top: 12%;
+    padding:8px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 9px rgb(130, 130, 130);
+}
+#add-btn{
+    position: fixed;
+    width:10%;
+    left: 85%;
+    top:12%;
+    display: inline;
+    padding: 8px;
+    background: #023799;
+    color:white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+#add-btn:hover{
+    position: fixed;
+    width:10%;
+    left: 85%;
+    top:12%;
+    display: inline;
+    padding: 8px;
+    background: #0A55E8;
+    color:white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    transform: scale(0.95);
+    cursor: pointer;
+}
+#table-container{
+    /* table-layout: fixed; */
+    margin-top: 7%;
+    margin-left: 2%;
+    top:35px;
+    width: auto; 
+    position: relative;
+    left:5%;
+    box-shadow: 0px 0px 10px rgb(190, 190, 190);
+}
+table{
+    position: sticky;
+    margin-top: 10px;
+    background-color: white;
+    overflow-x: scroll;
+    border-radius: 3px;
+}
+th{
+    border: .5px solid rgb(218, 214, 214);
+    position: relative;
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+    /* position:sticky;
+        left:5%; 
+    /* width:30%; */
+}
+th:nth-child(1){
+    width:30px;
+}
+th:nth-child(9){
+    width:50px;
+}
+.navbar {
+    background-color: #ffffff;
+    padding: 2%;
+    /* padding-left: 3%; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 27%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    z-index: 1000;
+    overflow-x:scroll;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar.open {
+    transform: translateX(0);
+}
+#userId{
+    position: relative;
+    margin-left: 3%;
+    border-radius: 4px;
+    border: .4px solid gray;
+    width: 77%;
+    height: 20px;
+    margin-top: 2%;
+}
+#taskTitle{
+    margin-left: 0%;
+    border-radius: 4px;
+    border: .4px solid gray;
+    width: 76%;
+    height: 20px;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+#taskDesc{
+    border-radius: 4px;
+    border: .4px solid gray;
+    width: 96%;
+    height: 5%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    height: 10%;
+    font-size: 15px;
+}
+label.priority{
+    position: relative;
+    margin-right: 35%;
+    width: 50%;
+    height: 20px;
+    margin-top: 1%;
+}
+label.taskStatus{
+    position: relative;
+    margin-left: 3%;
+    border-radius: 4px;
+    width: 25%;
+    height: 20px;
+    margin-top: 2%;
+    margin-bottom: 3%; 
+}
+#taskStatus{
+    position: relative;
+    margin-left: 3%;
+    border-radius: 4px;
+    border: .4px solid gray;
+    width: 25%;
+    height: 20px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+#priority{
+    position: relative;
+    margin-right: 24.3%;
+    border-radius: 4px;
+    border: .4px solid gray;
+    width: 25%;
+    height: 20px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+#plannedStartDate{
+    position: relative;
+    margin-left: 15.1%;
+    border-radius: 4px;
+    border: .4px solid gray;
+    /* width: 43%; */
+    height: 20px;
+    margin-top: 1%;
+}
+#plannedCompletionDate{
+    position: relative;
+    margin-left: 1.5%;
+    border-radius: 4px;
+    border: .4px solid gray;
+    /* width: 43%; */
+    height: 20px;
+    margin-top: 4%;
+}
+#actualStartDate{
+    position: relative;
+    margin-left: 18.5%;
+    border-radius: 4px;
+    border: .4px solid gray;
+    /* width: 43%; */
+    height: 20px;
+    margin-top: 4%;
+}
+#actualCompletionDate{
+    position: relative;
+    margin-left: 5%;
+    border-radius: 4px;
+    border: .4px solid gray;
+    /* width: 43%; */
+    height: 20px;
+    margin-top: 4%;
+}
+#activeStatus{
+    position: relative;
+    margin-left: 4%;
+    border-radius: 4px;
+    border: .4px solid gray;
+    width: 25%;
+    height: 20px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+#assigneeId{
+    position: relative;
+    margin-left: 6%;
+    border-radius: 4px;
+    border: .4px solid gray;
+    width: 40%;
+    height: 20px;
+    margin-top: 3%;
+}
+#assignerId{
+    position: relative;
+    margin-left: 7%;
+    border-radius: 4px;
+    border: .4px solid gray;
+    width: 40%;
+    height: 20px;
+    margin-top: 3%;
+}
+#createdBy{
+    position: relative;
+    margin-left: 8%;
+    border-radius: 4px;
+    border: .4px solid gray;
+    width: 40%;
+    height: 20px;
+    margin-top: 3%;
+}
+#updatedBy{
+    position: relative;
+    margin-left: 6%;
+    border-radius: 4px;
+    border: .4px solid gray;
+    width: 40%;
+    height: 20px;
+    margin-top: 3%;
+}
+.submit-button {
+    display: block;
+    width: auto;
+    padding: 12px 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    margin-top: 4%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.submit-button:hover {
+    background-color: #0069d9;
+}
+.close-button {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    color: #333;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
+    line-height: 32px;
+}
+.close-button:hover {
+    background-color: #f0f0f0;
 }
