@@ -7,10 +7,96 @@
     <link rel="stylesheet" href="task.css">
 </head>
 <body>
-    <div id="task_design"></div>
+    <div id="design-top"></div>
+    <div id="design-nav"></div>
     <div id="task_container">
-        <h2>Online Task Management System</h2>
+        <h2>Task list</h2>
+        <input type="text" id="input-search" placeholder="Search">
+        <button type="button" id="add-btn" onclick="openNavbar()">Add Task</button>
+    </div>  
+    <div id="table-container">
+    <table>
+            <th>Id</th>
+            <th>User Id</th>
+            <th>Task title</th>
+            <th>Task Description</th>
+            <th>Priority</th>
+            <th>Task status</th>
+            <th>Planned Start date</th>
+            <th>Planned Completion Date</th>
+            <th>Actual Start Date</th>
+            <th>Actual Completion Date</th>
+            <th>Active Status</th>
+            <th>Assignee ID</th>
+            <th>Assigner ID</th>
+            <th>Created By</th>
+            <th>Updated By</th>
+            <th>Created Date</th>
+            <th>Updated Date</th>
+    </table>
+        <div id="navbar" class="navbar">
+         <h3>Task Details</h3>
+         <form>
+            <label>User ID </label>
+            <input type="text" id="userId" placeholder="User ID">
+            <br> 
+            <label>Task Title </label>   
+            <input type="text" id="taskTitle" placeholder='Task title'>
+            <br> 
+            <label> Description</label>
+            <textarea id="taskDesc" placeholder="Task Description"></textarea>
+            <br>
+            <label class='priority'>Priority</label>
+
+            <label class="taskStatus" placeholder="Task Status">Task Status</label>
+            <br>
+            <select id="priority">
+               <option value="low">Low</option>
+               <option value="medium">Medium</option>
+               <option value="high">High</option>
+            </select>
+             <select id="taskStatus">
+                <option id="pre_low">Pending</option>
+                <option id="pre_medium">Completed</option>  
+            </select><br> 
+            <label id="planned_start">Planned Start Date </label>
+            <input type="datetime-local" id="plannedStartDate">
+            <br>
+            <label id="Planned_completion">Planned Completion date</label>
+            <input type="datetime-local" id="plannedCompletionDate">
+            <br>
+            <label id="actual_start">Actual Start Date</label>
+            <input type="datetime-local" id="actualStartDate">
+            <br>
+            <label id="actual_completion">Actual Completion date</label>
+            <input type="datetime-local" id="actualCompletionDate">
+            <br>
+            <label>Active Status</label>
+            <select id="activeStatus">
+                <option id="active">Active</option>
+                <option id="inactive">Inactive</option>  
+            </select><br>
+            <label id="Assignee_Id">Assignee ID</label>
+            <input type="text" id="assigneeId" placeholder="Assignee ID">
+            <br>
+            <label id="Assigner_Id">Assigner ID</label>
+            <input type="text" id="assignerId" placeholder="Assigner ID">
+            <br>
+            <label id="Created_By">Created By</label>
+            <input type="text" id="createdBy" placeholder="Created By">
+            <br>
+            
+            <label id="Updated_By">Updated By</label>
+            <input type="text" id="updatedBy" placeholder="Updated By">
+            <br>
+         </form>
+          <button class="submit-button" onclick="submit()">Submit</button>
+          <button class="close-button" onclick="closeNavbar()">
+            &times;
+        </button>
+     </div>
     </div>
-    <script href="task.js"></script>
+    <script src="task.js"></script>
+    
 </body>
 </html>
